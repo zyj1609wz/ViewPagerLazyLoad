@@ -1,5 +1,5 @@
 # ViewPagerLazyLoad
-ViewPager 懒加载模式
+AndroidX ViewPager 懒加载模式 两种方式：
 
 - 常规模式下的懒加载实现方式
 
