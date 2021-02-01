@@ -4,13 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".mode1.MainActivity">
+
+   <Button
+       app:layout_constraintTop_toTopOf="parent"
+       android:id="@+id/bt"
+       android:text="第二种模式"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+   </Button>
 
    <androidx.viewpager.widget.ViewPager
        android:id="@+id/viewPager"
-       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/bt"
        android:layout_width="match_parent"
-       android:layout_height="wrap_content">
+       android:layout_height="0dp">
    </androidx.viewpager.widget.ViewPager>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

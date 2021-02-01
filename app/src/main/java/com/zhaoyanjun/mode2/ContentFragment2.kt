@@ -1,4 +1,4 @@
-package com.zhaoyanjun
+package com.zhaoyanjun.mode2
 
 import android.os.Bundle
 import android.util.Log
@@ -6,8 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import com.zhaoyanjun.R
 
-class ContentFragment : BaseFragment() {
+class ContentFragment2 : BaseFragment2() {
 
     private var param1: String? = null
     private var rootView: View? = null
@@ -32,7 +33,7 @@ class ContentFragment : BaseFragment() {
     override fun onFirstLoad() {
         super.onFirstLoad()
         //第一次加载
-        Log.d("zhaoyanjun-", "firstLoad index: $param1")
+        Log.d("zhaoyanjun-mode2 ", "firstLoad index: $param1")
         nameTv?.text = param1
     }
 
@@ -42,7 +43,7 @@ class ContentFragment : BaseFragment() {
 
         @JvmStatic
         fun newInstance(param1: String) =
-            ContentFragment().apply {
+            ContentFragment2().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                 }

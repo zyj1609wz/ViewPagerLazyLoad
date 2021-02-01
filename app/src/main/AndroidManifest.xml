@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RecyclerViewDemo">
-        <activity android:name=".MainActivity">
+        <activity android:name=".mode1.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity2"></activity>
+        <activity android:name=".mode2.MainActivity2"></activity>
 
     </application>
 

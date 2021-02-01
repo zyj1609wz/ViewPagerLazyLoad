@@ -1,4 +1,4 @@
-package com.zhaoyanjun
+package com.zhaoyanjun.mode1
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -42,6 +42,9 @@ abstract class BaseFragment : Fragment() {
         onFirstLoad()
     }
 
+    /**
+     * 懒加载的时候调用
+     */
     open fun onFirstLoad() {
 
     }
